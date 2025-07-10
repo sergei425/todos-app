@@ -4,7 +4,7 @@ import { loadState, saveState } from "./localStorage.js";
 
 const TodoContext = createContext();
 export const useTodos = () => useContext(TodoContext);
-const initialState = await loadState()
+const initialState = loadState()
 
 export default function TodoProvider({ children }) {
   const [todos, setTodos] = useState(initialState);
