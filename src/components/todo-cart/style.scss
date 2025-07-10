@@ -1,0 +1,51 @@
+.todo {
+  min-width: 180px;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-radius: 15px;
+
+  .todo__wrap {
+    display: flex;
+    flex-direction: column;
+
+    .todo__time-warning {
+      padding: 12px;
+      white-space: nowrap;
+      background-color: crimson;
+      color: blanchedalmond;
+      
+    }
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .todo__button-wrap {
+    display: flex;
+
+    button {
+      border: 0;
+      background-color: transparent;
+    }
+
+    button + button {
+      margin-left: 10px;
+    }
+    input {
+      width: 18px;
+      height: 18px;
+      margin-right: auto;
+      border: 3px solid #000;
+      border-radius: 15px;
+
+      &:checked {
+        accent-color: #000;
+      }
+    }
+  }
+}
+
+
